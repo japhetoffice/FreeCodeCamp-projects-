@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0112)file:///C:/Users/EliteBook%20Ryzen5/OneDrive/Music/__________Japhet_Office/practice_projects/SurveyFormHTML.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./Survey Form_files/SurveyFormCss.css">
+</head>
+<body>
+  <h1 id="title">Student Feedback Survey</h1>
+  <p id="description">We appreciate your feedback to help us improve our services.</p>
+
+  <form id="survey-form">
+
+    <!-- Name -->
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required="">
+
+    <!-- Email -->
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required="">
+
+    <!-- Number -->
+    <label id="number-label" for="number">Age:</label>
+    <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="100">
+
+    <!-- Dropdown -->
+    <label for="dropdown">What is your role?</label>
+    <select id="dropdown" name="role" required="">
+      <option value="">Select an option</option>
+      <option value="student">Student</option>
+      <option value="teacher">Teacher</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <p>How satisfied are you with our services?</p>
+    <label><input type="radio" name="satisfaction" value="very"> Very Satisfied</label><br>
+    <label><input type="radio" name="satisfaction" value="somewhat"> Somewhat Satisfied</label><br>
+    <label><input type="radio" name="satisfaction" value="not"> Not Satisfied</label>
+
+    <!-- Checkboxes -->
+    <p>Which features do you use? (Select all that apply)</p>
+    <label><input type="checkbox" name="features" value="videos"> Video Lectures</label><br>
+    <label><input type="checkbox" name="features" value="quizzes"> Quizzes</label><br>
+    <label><input type="checkbox" name="features" value="forums"> Discussion Forums</label>
+
+    <!-- Textarea -->
+    <label for="comments">Any additional comments?</label>
+    <textarea id="comments" name="comments" placeholder="Write your message here..."></textarea>
+
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</body></html>
